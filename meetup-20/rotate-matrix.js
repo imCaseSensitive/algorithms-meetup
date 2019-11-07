@@ -15,13 +15,15 @@ const output = [
 
 const rotater = (matrix) => {
     const answer = []
-    for (let i = 0; i < matrix[i].length; i++) {
+    for (let i = 0; i < matrix[0].length; i++) {
         answer.push([])
         for (let j = matrix.length - 1; j >= 0; j--) {
             answer[i].push(matrix[j][i]);
         }
     }
+    console.log(answer)
     return answer
 }
 
 rotater(input)
+
